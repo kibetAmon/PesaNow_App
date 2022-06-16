@@ -1,14 +1,13 @@
-package transactionService;
-/*----------IMPORTS AND PACKAGES-----*/
+package com.AmonKibet.BankingApp.transactionservice;
+
 import org.springframework.stereotype.Service;
-import transaction.Transaction;
+import com.AmonKibet.BankingApp.transaction.Transaction;
+
 import java.util.Date;
 import java.util.List;
 
-/*Annotating the service class for readability*/
 @Service
 public class TransactionService {
-
     /*-Method that returns the list of transactions-*/
     public List<Transaction> findAllByAccountNumber(final Integer accountNumber){
         return List.of(Transaction

@@ -1,9 +1,9 @@
-package service;
+package com.AmonKibet.BankingApp.service;
 /*---service.TransactionServiceTest.java
  ----Unit testing TransactionService using junit
 */
 import org.junit.jupiter.api.Test;
-import transactionService.TransactionService;
+import com.AmonKibet.BankingApp.transactionservice.TransactionService;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 public class TransactionServiceTest {
