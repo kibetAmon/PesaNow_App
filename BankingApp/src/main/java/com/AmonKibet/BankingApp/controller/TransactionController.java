@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import com.AmonKibet.BankingApp.transactionservice.TransactionService;
-import com.AmonKibet.BankingApp.transaction.Transaction;
 
 import java.util.List;
 
