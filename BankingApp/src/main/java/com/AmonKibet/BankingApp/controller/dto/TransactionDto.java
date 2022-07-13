@@ -24,6 +24,7 @@ public class TransactionDto {
         var t = new TransactionDtoBuilder()
                 .id(tr.getId())
                 .type(tr.getType())
+                .date(tr.getDate())
                 .accountNumber(tr.getAccountNumber())
                 .currency(tr.getCurrency())
                 .amount(tr.getAmount())
