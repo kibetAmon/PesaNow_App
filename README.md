@@ -5,6 +5,7 @@ In a nutshell, open banking is a banking practice that provides third-party fina
 ## Objective
 To create a REST endpoint that will return a list of mocked up transactions,build tests to ensure functionality and create a web app to consume the REST Api and display data.
 ## Technologies used
-1. Spring boot 
-2. Docker
-3. MySQL
+1. Java
+2. Spring boot 
+3. Docker
+4. MySQL
