@@ -3,10 +3,7 @@ package com.AmonKibet.BankingApp.controller;
 
 import com.AmonKibet.BankingApp.controller.dto.TransactionDto;
 import com.AmonKibet.BankingApp.transaction.Transaction;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import com.AmonKibet.BankingApp.transactionservice.TransactionService;
 
 import java.util.List;
@@ -22,6 +19,7 @@ public class TransactionController {
     public TransactionController(final TransactionService transactionService){
         this.transactionService = transactionService;
     }
+    @CrossOrigin //Fixing CORS error
     @GetMapping("/{accountNumber}")
     public List<TransactionDto> findAllByAccountNumber(@PathVariable("accountNumber") final Integer accountNumber){
         return transactionService.findAllByAccountNumber(accountNumber)
